@@ -1,4 +1,4 @@
-# "zySULTAN Haskell Operators"
+# zySULTAN Haskell Operators
 
 |Operator     |Type                                          |Notes|
 |:-----------:|----------------------------------------------|-----|
