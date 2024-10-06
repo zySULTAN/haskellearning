@@ -24,3 +24,25 @@
 | `$ $!`      | `(a -> b) -> a -> b`                         | Function application operator.<br>`$!` will evaluate the argument first (to WHNF). |
 | `++`        | `[a] -> [a] -> [a]`                          | List concatenation |
 | `!!`        | `[a] -> Int -> a`                            | Get an element out of a list |
+
+| Function    | Type                                       | Notes |
+|:-----------:|--------------------------------------------|-------|
+| `lines`     | `String -> [String]`                       | Splits a string into a list of lines (strings), separating at newline characters (`\n`). |
+| `unlines`   | `[String] -> String`                       | Joins a list of strings into a single string, adding newline characters between each. |
+| `words`     | `String -> [String]`                       | Splits a string into a list of words, using spaces as separators. |
+| `unwords`   | `[String] -> String`                       | Joins a list of words into a single string, with spaces in between. |
+| `map`       | `(a -> b) -> [a] -> [b]`                   | Applies a function to every element of a list, transforming it. |
+| `filter`    | `(a -> Bool) -> [a] -> [a]`                | Filters a list, keeping only elements that satisfy a condition. |
+| `foldl`     | `(b -> a -> b) -> b -> [a] -> b`           | Reduces a list from the left using a binary function. |
+| `foldr`     | `(a -> b -> b) -> b -> [a] -> b`           | Reduces a list from the right using a binary function. |
+| `show`      | `Show a => a -> String`                    | Converts a value into its string representation. |
+| `read`      | `Read a => String -> a`                    | Parses a string into a value of type `a`. |
+| `interact`  | `(String -> String) -> IO ()`              | Reads input, transforms it using a function, and outputs the result. |
+| `take`      | `Int -> [a] -> [a]`                        | Takes the first `n` elements of a list. |
+| `drop`      | `Int -> [a] -> [a]`                        | Drops the first `n` elements of a list. |
+| `head`      | `[a] -> a`                                 | Returns the first element of a list. |
+| `tail`      | `[a] -> [a]`                               | Returns a list without its first element. |
+| `length`    | `[a] -> Int`                               | Returns the length of a list. |
+| `reverse`   | `[a] -> [a]`                               | Reverses the elements of a list. |
+| `zip`       | `[a] -> [b] -> [(a, b)]`                   | Combines two lists into a list of pairs. |
+| `concat`    | `[[a]] -> [a]`                             | Concatenates a list of lists into a single list. |
