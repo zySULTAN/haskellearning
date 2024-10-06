@@ -1,4 +1,4 @@
-# zySULTAN Haskell Operators
+# zySULTAN Haskell Operators && Functions
 
 |Operator     |Type                                          |Notes|
 |:-----------:|----------------------------------------------|-----|
